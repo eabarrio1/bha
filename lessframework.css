@@ -1,0 +1,431 @@
+/*	Less Framework 3
+	by Joni Korpi
+	http://lessframework.com	*/
+
+
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figure, figcaption, hgroup, menu, header, footer, nav, section, summary, time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0
+}
+article, aside, canvas, figure, figure img, figcaption, hgroup, footer, header, nav, section, audio, video {
+	display:block
+}
+a img {
+	border:0
+}
+figure {
+	position:relative
+}
+figure img {
+	width:100%
+}
+
+
+
+/*------MEDIA QUERIES-----------*/
+
+
+
+/* Smartphones (portrait) ----------- */
+
+@media only screen and (max-width : 649px) {
+/* Styles */
+
+#leaves {
+ background: url(images/leaves2.png) top center repeat-x;
+ background-size: 250% auto;
+}
+ #logo a {
+ background-image: url(images/bha-logo.png);
+ width: 190px;
+ height: 227px;
+ text-indent: -9999px;
+ display: block;
+ border: none;
+ background-position: top center;
+ background-repeat: no-repeat;
+ z-index: 100;
+ margin: 0 auto;
+}
+.searchform {
+ display:none;
+}
+ #greenbar {
+ display:none;
+}
+ #navybar .container {
+}
+ #nav {
+ display: none;
+}
+ img.aligncenter, img.alignright, img.alignleft {
+ max-width: 290px;
+ height: auto;
+ margin: 0 auto;
+}
+ #box {
+ padding-bottom: 15px;
+}
+ #sidebar {
+ padding-bottom:20px;
+}
+ .wpcf7-text, .wpcf7-textarea {
+ width: 96%;
+}
+
+/*----RESPONSIVE MENU-----*/
+
+
+a.menu-link {
+ background-color: #111A2B;
+ border: none;
+ text-align: left;
+ margin: 0;
+ padding: 15px 0 15px 10px;
+ cursor: pointer;
+ color: #8aae5d;
+ font-size: 15px;
+ font-weight: bold;
+ text-transform: uppercase;
+ display: block;
+ text-align:center;
+ letter-spacing: 1px;
+ font-family: arial;
+}
+.mob-menu, .mob-menu ul ul {
+ -webkit-transition: all 0.3s ease-out;
+ -moz-transition: all 0.3s ease-out;
+ -ms-transition: all 0.3s ease-out;
+ -o-transition: all 0.3s ease-out;
+ transition: all 0.3s ease-out;
+ font-family: arial;
+}
+.js .mob-menu, .js .mob-menu > ul ul {
+ overflow: hidden;
+ max-height: 0;
+ background: rgba(0, 0, 0, 0.1);
+}
+.mob-menu.active, .js .mob-menu > ul ul.active {
+ max-height: 55em;
+}
+.mob-menu > ul {
+}
+.mob-menu li a {
+ background-color: #243047;
+ text-transform: uppercase;
+ display: block;
+ padding: 0.8em;
+ font-size: 10px;
+ text-transform: uppercase;
+ font-weight: bold;
+ color: #8aae5d;
+ text-align:left;
+ border-bottom: 1px solid #111A2B;
+ position: relative;
+ text-align:left;
+ letter-spacing: 1px;
+}
+.mob-menu li.has-subnav > a:after {
+ content: '+';
+ top: 0;
+ right: 0;
+ font-size: 1.5em;
+ padding: 0.25em 0.5em;
+}
+.mob-menu li.has-subnav > a.active:after {
+ content: "-";
+}
+}
+
+
+
+/* Desktops and laptops ----------- */
+
+@media only screen and (min-width : 650px) {
+/* Styles */
+
+
+#leaves {
+ background: url(images/leaves.png) top center no-repeat;
+}
+ #logo a {
+ background-image: url(images/bha-logo.png);
+ width: 190px;
+ height: 227px;
+ text-indent: -9999px;
+ display: block;
+ border: none;
+ position: absolute;
+ background-position: top center;
+ background-repeat: no-repeat;
+ z-index: 100;
+}
+ #navybar {
+ background: #111A2B url(images/navybarbg.png) bottom right no-repeat;
+}
+ #home-container, #subpage-container {
+ max-width: 900px;
+ padding: 0px;
+ margin: 0 auto;
+ padding-bottom:6px;
+ -webkit-box-shadow: 0 0 10px 2px #121B2C;
+ -moz-box-shadow: 0 0 10px 2px #121B2C;
+ box-shadow: 0 0 10px 2px #121B2C;
+}
+ #subpage-container {
+ min-height: 850px;
+}
+ #boxes {
+ position: relative;
+ background-color: #9FB779;
+}
+ #box {
+ width:33.1%;
+ margin: .2% .1%;
+ float: left;
+ min-height: 270px;
+/*-moz-box-shadow: inset 0px 1px 1px #C3BBA6;
+-webkit-box-shadow: inset 0px 1px 1px #C3BBA6;
+box-shadow: inset 0px 1px 1px #C3BBA6;*/
+}
+ #pagecontent {
+ float:right;
+ width: 65%;
+}
+ .third {
+ width: 30%;
+ margin-right: 3%;
+ float:left;
+}
+ label {
+ float:left;
+ width: 110px;
+ vertical-align: middle;
+}
+ #sidebar {
+ float:left;
+ width: 32%;
+ position:absolute;
+ height: 100%;
+}
+ #sidebar-content {
+ margin-top:120px;
+}
+ #sidebar h4 {
+}
+ #left-box {
+ float:left;
+ width: 49%;
+}
+ #right-box {
+ float:right;
+ width: 45%;
+}
+ #footer-left {
+ float:left;
+ width: 47%;
+ margin-bottom: 15px;
+}
+ #footer-right {
+ float:right;
+ width: 47%;
+ text-align: right;
+}
+ #page-content-single .post-content {
+ width: 47%;
+ float:left;
+}
+
+
+
+
+
+/* iPhone 4 ----------- */
+
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+
+
+}
+ @media only screen and (min-width : 651px) and (max-width : 850px) { /*NAVIGATION QUERIES - WEIRD PHASE BETWEEN MOBILE AND DESKTOP*/
+ #nav {
+ display: none;
+}
+ .text {
+ display: none;
+}
+
+/*----RESPONSIVE MENU-----*/
+
+
+a.menu-link {
+ background: #111A2B url(images/navybarbg.png) bottom right no-repeat;
+ border: none;
+ text-align: left;
+ margin: 0;
+ padding: 20px 0 12px 0px;
+ cursor: pointer;
+ color: #8aae5d;
+ font-size: 15px;
+ font-weight: bold;
+ text-transform: uppercase;
+ display: block;
+ text-align:right;
+ letter-spacing: 1px;
+ font-family: arial;
+}
+.mob-menu, .mob-menu ul ul {
+ -webkit-transition: all 0.3s ease-out;
+ -moz-transition: all 0.3s ease-out;
+ -ms-transition: all 0.3s ease-out;
+ -o-transition: all 0.3s ease-out;
+ transition: all 0.3s ease-out;
+ font-family: arial;
+}
+.js .mob-menu, .js .mob-menu > ul ul {
+ overflow: hidden;
+ max-height: 0;
+ background: rgba(0, 0, 0, 0.1);
+}
+.mob-menu.active, .js .mob-menu > ul ul.active {
+ max-height: 55em;
+}
+.mob-menu > ul {
+}
+ .mob-menu li a {
+ background-color: #243047;
+ text-transform: uppercase;
+ display: block;
+ padding: 0.8em;
+ font-size: 10px;
+ text-transform: uppercase;
+ font-weight: bold;
+ color: #8aae5d;
+ text-align:left;
+ border-bottom: 1px solid #111A2B;
+ position: relative;
+ text-align:right;
+ letter-spacing: 1px;
+}
+.mob-menu li.has-subnav > a:after {
+ content: '+';
+ top: 0;
+ right: 0;
+ font-size: 1.5em;
+ padding: 0.25em 0.5em;
+}
+.mob-menu li.has-subnav > a.active:after {
+ content: "-";
+}
+}
+ @media only screen and (min-width : 850px) { /*NAVIGATION QUERIES - DESKTOP*/
+
+
+/*---NAVIGATION---*/
+
+.menu-link {
+ display: none;
+}
+ #mobmenu {
+ display:none;
+}
+ #nav {
+}
+#nav ul {
+ float:right;
+ list-style:none;
+ margin:0;
+ padding:0;
+}
+#nav ul li {
+ float:left;
+ list-style:none;
+ margin:0;
+ position:relative;
+ display: block;
+}
+#nav ul li a {
+ letter-spacing: 1px;
+ padding:22px 13px 10px 13px;
+ font-size: 10px;
+ display: block;
+ font-family: arial;
+ font-weight: bold;
+ background: url(images/navimg.jpg) top right no-repeat;
+ background-size: 1px 75%;
+ color: #8aae5d;
+ text-transform: uppercase;
+ text-decoration:none;
+ -o-transition:.3s;
+ -ms-transition:.3s;
+ -moz-transition:.3s;
+ -webkit-transition:.3s;
+ transition:.3s;
+}
+#nav ul ul li a:hover, #nav ul li a:hover {
+ color: #ffffff;
+}
+li.active {
+ color: #F38740;
+}
+/*--DROPDOWN---*/
+#nav ul ul li:hover {
+ display: block;
+}
+#nav ul li:hover a {
+}
+#nav ul ul {
+ position:absolute;
+ top:100%;
+}
+#nav ul ul li {
+}
+#nav ul ul li a {
+ background-color: #9cb2b9;
+ padding:10px 13px;
+ background-image: none;
+ border-bottom: 2px solid #839ea6;
+ color: #ffffff;
+ display: block;
+ width: 180px;
+ margin: 0;
+}
+#nav ul ul li a:hover {
+ background-color: #b9c8cc;
+ height: 100%;
+}
+#nav li:hover ul, #nav li li:hover ul {
+ display:block;
+}
+#nav li:hover ul ul, #nav li li:hover ul ul, #nav li li li:hover ul ul, #nav ul ul {
+ display:none;
+}
+#nav li:hover ul, #nav li li:hover ul {
+ display:block;
+}
+#nav ul ul li:hover {
+ display: block;
+}
+#nav ul li:hover a {
+}
+#nav ul ul {
+ position:absolute;
+ top:100%;
+}
+#nav ul ul li {
+}
+#nav li:hover ul, #nav li li:hover ul {
+ display:block;
+}
+#nav li:hover ul ul, #nav li li:hover ul ul, #nav li li li:hover ul ul, #nav ul ul {
+ display:none;
+}
+#nav li:hover ul, #nav li li:hover ul {
+ display:block;
+ z-index: 200;
+}
+}
